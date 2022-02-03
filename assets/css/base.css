@@ -1,4 +1,12 @@
 
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --main-header-height: 70px;
+
+}
+
 *{
     box-sizing: inherit;
 }
