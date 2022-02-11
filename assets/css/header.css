@@ -4,3 +4,33 @@
     height: var(--main-header-height);
     /* background-color: aqua; */
 }
+
+
+.main-header-has-search{
+    width: 600px;
+}
+
+.main-header-search{
+    flex: 1;
+}
+
+.main-header-input-group{
+
+}
+
+
+.main-header-select-date{
+
+}
+
+.main-header-count-guest{
+
+}
+
+.select-date-btn{
+    padding: 10px 16px;
+}
+
+.main-header-count-guest-btn{
+    padding: 10px 16px;
+}
