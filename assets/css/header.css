@@ -1,8 +1,23 @@
 
 
 .main-header{
-    height: var(--main-header-height);
+    /* height: var(--main-header-height); */
     /* background-color: aqua; */
+}
+
+
+
+.home-page-logo-link{
+    
+}
+
+.home-page-logo-svg{
+    fill: #222222;
+}
+
+.home-page-logo-link:hover
+.home-page-logo-svg{
+    fill: #F65E39;
 }
 
 
@@ -13,6 +28,8 @@
 .main-header-search{
     flex: 1;
 }
+
+
 
 .main-header-input-group{
 
