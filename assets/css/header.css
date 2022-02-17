@@ -56,6 +56,26 @@
     background-color: rgb(85, 85, 85);
 }
 
+/* .currency-unit-crop-img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: relative;
+    background-color: transparent;
+} */
+
+.currency-unit-img{
+    width: 20px;
+    height: 20px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+
+
+
+
+
 /* .main-header-select-date{
 
 }
@@ -71,3 +91,28 @@
 .main-header-count-guest-btn{
     padding: 10px 16px;
 } */
+
+
+.main-header-nav-link{
+    color: var(--text-color);    
+}
+
+.main-header-nav-link:hover{
+    color: var(--text-link-hover-color);
+}
+
+.main-header-nav-has-currency-link:hover{
+    color: inherit;
+}
+
+.main-header-nav-has-host-link{
+    position: relative;
+}
+
+.main-header-nav-has-host-icon{
+    font-size: 5px;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    color: #F65E39;
+}

@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="venders/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="venders/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="venders/font/fontawesome-free-6.0.0-web/css/all.min.css">
 
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/header.css">
@@ -26,65 +27,52 @@
                     </a>
                     <ul class="navbar-nav mr-auto">
                         <form class="form-inline rounded px-2 main-header-search">
-                            <div class="input-group main-header-search__input-wrapper">
+                            <div class="input-group px-2 main-header-search__input-wrapper">
                                 <input id="mainHeaderSearchInput" class="form-control main-header-search__input" type="text" placeholder="Tìm kiếm">
                                 <i id="mainHeaderSearchIcon" class="fas fa-search main-header-search-icon" aria-hidden="true"></i>
                                 <div class="input-group-append">
                                     <button class="btn px-4" type="button">
                                         <i class="far fa-calendar"></i>
-                                        <span class="ml-2">Ngày</span>
+                                        <span class="ml-2 text-weight">Ngày</span>
                                     </button>
                                     <button class="btn px-4" type="button">
                                         <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span class="ml-2">Số khách</span>
+                                        <span class="ml-2 text-weight">Số khách</span>
                                     </button>
                                     <button type="button" class="btn px-4 my-2 rounded main-header-search-btn">
                                         <i class="fas fa-search text-white"></i>
                                     </button>
                                 </div>
                             </div>
-                            <!-- <div class="input-group main-header-input-group main-header-search__select-date">
-                                <button class="btn btn-sm select-date-btn" type="button">
-                                    <i class="far fa-calendar"></i>
-                                    <label>Ngày</label>
-                                </button>
-
-                            </div>
-                            <div class="input-group main-header-input-group main-header-search__count-guest">
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle main-header-count-guest-btn" id="numOfGuest" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button">
-                                        Dropdown
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="numOfGuest">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="input-group main-header-input-group">
-                                <button type="button" class="btn btn-sm btn-secondary">
-                                    <span><i class="fas fa-search"></i></span>
-                                </button>
-                            </div> -->
                         </form>
                     </ul>
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Guide</a>
+                        <li class="nav-item mr-2">
+                            <a href="#" class="nav-link text-color main-header-nav-link text-weight">Guide</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Host</a>
+                        <li class="nav-item mr-2">
+                            <a href="#" class="nav-link main-header-nav-link main-header-nav-has-host-link text-color text-weight">
+                                Host
+                                <i class="fa-solid fa-circle main-header-nav-has-host-icon"></i>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Đăng ký</a>
+                        <li class="nav-item mr-2">
+                            <a href="#" class="nav-link text-color main-header-nav-link text-weight">Đăng ký</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Đăng nhập</a>
+                        <li class="nav-item mr-2">
+                            <a href="#" class="nav-link text-color main-header-nav-link text-weight">Đăng nhập</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">VND</a>
+                        <li class="nav-item dropdown main-header-nav-has-currency mr-2">
+                            <a href="#" class="nav-link main-header-nav-has-currency-link dropdown-toggle text-color text-weight" id="currencyUnit" data-toggle="dropdown">
+                                <img src="/assets/img/vietnam-flag.png" alt="currency-unit" class="rounded-circle currency-unit-img">
+                                <span class="currency-unit-label">VND</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="currencyUnit">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
