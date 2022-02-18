@@ -38,3 +38,23 @@
 
 
 
+.home-page-header{
+
+}
+
+.home-page-header__heading{
+    margin-bottom: 10px;
+}
+
+.home-page-header__description{
+    color: var(--text-color);
+}
+
+.home-page-introduction-entry__link{
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.home-page-introduction-entry__link:hover{
+    color: var(--text-link-hover-color);
+}
