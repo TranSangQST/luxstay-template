@@ -1,0 +1,40 @@
+.home-page-container{
+
+}
+
+
+.home-page-content{
+    padding: 32px 64px;
+}
+
+.home-page-slider{
+    width: 100%;
+    position: relative;
+}
+
+
+.home-page-slider-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.home-page-slider-tab{
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    
+}
+
+.home-page-slider-tab-icon{
+    margin-left: 4px;
+    font-size: 8px;
+    color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.home-page-slider-tab-icon.home-page-slider-tab-icon--active{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+

@@ -11,12 +11,14 @@
 
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/homePageContent.css">
+
 
     <title>Document</title>
 </head>
 <body>
     <div class="home-page px-4 py-0">
-        <header class="main-header border-bottom border-light">
+        <header class="py-2 main-header border-bottom border-light">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg py-2">
                     <a class="navbar-brand home-page-logo-link" href="#">
@@ -79,8 +81,18 @@
             </div>
         </header>
 
-        <div class="home-page-content">
-            Sang
+        <div class="home-page-container">
+            <div class="home-page-content">
+                <div class="home-page-slider">
+                    <div class="home-page-slider-img-list" id="homePageSliderImgList">
+                        <img src="#" alt="slider" class="home-page-slider-img" id="homePageSliderImg">
+                    </div>                    
+                    <div class="home-page-slider-tab" id="homePageSliderTab">
+                        <!-- <i class="fa-solid fa-circle home-page-slider-tab-icon home-page-slider-tab-icon--active"></i>
+                        <i class="fa-solid fa-circle home-page-slider-tab-icon"></i> -->
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="main-footer">
@@ -94,5 +106,6 @@
     <script src="/venders/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 
     <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/homePageContent.js"></script>
 </body>
 </html>
