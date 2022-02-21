@@ -13,16 +13,23 @@
 }
 
 
+
 .home-page-slider-img{
     width: 100%;
     border-radius: 20px;
 }
 
-.home-page-slider-tab{
+.home-page-slider-tab-list{
     position: absolute;
-    right: 50px;
-    bottom: 20px;
+    right: 40px;
+    bottom: 5px;
+    z-index: 1;
+    list-style: none;
     
+}
+
+.home-page-slider-tab-item{
+    display: inline-block;
 }
 
 .home-page-slider-tab-icon{
@@ -32,7 +39,7 @@
     cursor: pointer;
 }
 
-.home-page-slider-tab-icon.home-page-slider-tab-icon--active{
+.home-page-slider-tab--active .home-page-slider-tab-icon{
     color: rgba(0, 0, 0, 0.5);
 }
 
