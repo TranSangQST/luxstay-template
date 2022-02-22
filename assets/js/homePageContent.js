@@ -44,14 +44,15 @@ $( document ).ready(function() {
 
 //https://stackoverflow.com/questions/31561717/bootstrap-carousel-indicators-out-of-the-main-div-not-switching-automatically
 $('#homePageSlider').on('slide.bs.carousel', function (e) {
+
+
+
     const oldSlider=$(e.target).find('.home-page-slider-tab-item.home-page-slider-tab--active'); //get the current active slide
-    const oldSliderIndex = oldSlider.index();
     console.log(oldSlider);
 
-    const sizeOfSliderTab = $('#homePageSliderTabList .home-page-slider-tab-item').length;
-    console.log("sizeOfSliderTab: ",sizeOfSliderTab);
+    const oldSliderIndex = e.from;
+    const curSliderIndex = e.to;
 
-    let curSliderIndex = parseInt(oldSliderIndex) >= (parseInt(sizeOfSliderTab) - 1) ? 0 : (parseInt(oldSliderIndex) + 1)
 
     console.log("old index: ", oldSliderIndex);
     console.log("cur index: ", curSliderIndex);
