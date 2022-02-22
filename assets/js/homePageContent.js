@@ -1,5 +1,46 @@
 
 
+$( document ).ready(function() {
+    const homePageSliderSource = $("#homePageSliderTemplate").html();        
+
+    console.log("homePageSliderSource: ", homePageSliderSource);
+    const homePageSliderTemplate = Handlebars.compile(homePageSliderSource);
+
+    console.log("homePageSliderTemplate: ", homePageSliderTemplate);
+
+    const sliderSrcs = [
+        {
+            src: "/assets/img/slider/slider01.png",
+        },
+        {
+            src: "/assets/img/slider/slider02.png",
+        },
+        {
+            src: "/assets/img/slider/slider03.png",
+        }
+    ];
+
+
+    console.log("sliderSrcs: ", sliderSrcs);
+    
+    const homePageSlider = $("#homePageSlider");
+
+    const slider = homePageSliderTemplate({sliderSrcs});
+
+    console.log("slider: ", slider);
+
+    homePageSlider.html(slider);
+
+
+    const firstSlider = $( "#homePageSliderImgList .home-page-slider-img-item" ).eq(0);
+    firstSlider.addClass('active');
+
+    const firstSliderTab = $( "#homePageSliderTabList .home-page-slider-tab-item" ).eq(0);
+    firstSliderTab.addClass('home-page-slider-tab--active');
+
+});
+
+
 
 //https://stackoverflow.com/questions/31561717/bootstrap-carousel-indicators-out-of-the-main-div-not-switching-automatically
 $('#homePageSlider').on('slide.bs.carousel', function (e) {
@@ -10,21 +51,15 @@ $('#homePageSlider').on('slide.bs.carousel', function (e) {
     const sizeOfSliderTab = $('#homePageSliderTabList .home-page-slider-tab-item').length;
     console.log("sizeOfSliderTab: ",sizeOfSliderTab);
 
-    let curSliderIndex = oldSliderIndex > (sizeOfSliderTab - 1) ? 0 : (oldSliderIndex + 1)
+    let curSliderIndex = parseInt(oldSliderIndex) >= (parseInt(sizeOfSliderTab) - 1) ? 0 : (parseInt(oldSliderIndex) + 1)
+
+    console.log("old index: ", oldSliderIndex);
+    console.log("cur index: ", curSliderIndex);
 
     oldSlider.removeClass('home-page-slider-tab--active');
 
     const newSlider = $( "#homePageSliderTabList .home-page-slider-tab-item" ).eq(curSliderIndex);
     newSlider.addClass('home-page-slider-tab--active');
-
-
-
-
-
-
-
-    
-
 
   })
 
