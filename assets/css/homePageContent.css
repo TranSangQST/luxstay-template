@@ -25,7 +25,6 @@
     bottom: 5px;
     z-index: 1;
     list-style: none;
-    
 }
 
 .home-page-slider-tab-item{
@@ -45,15 +44,15 @@
 
 
 
-.home-page-header{
+.home-page-content-header{
 
 }
 
-.home-page-header__heading{
+.home-page-content-header__heading{
     margin-bottom: 10px;
 }
 
-.home-page-header__description{
+.home-page-content-header__description{
     color: var(--text-color);
 }
 
@@ -64,4 +63,50 @@
 
 .home-page-introduction-entry__link:hover{
     color: var(--text-link-hover-color);
+}
+
+
+.home-page-place-slider{
+    position: relative;
+}
+
+.home-page-place-slider-list{
+    margin: 0 -12px;
+    padding-left: 0;
+}
+
+.home-page-place-slider-item{
+    display: block;
+    margin: 0 12px;
+    padding-left: 0;
+    /* width: 336px;
+    height: 420px; */
+
+}
+
+.home-page-place-slider-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.home-page-place-slider-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.home-page-place-slider-prev-btn{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(-30%, -50%);
+}
+
+.home-page-place-slider-next-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(30%, -50%);
 }

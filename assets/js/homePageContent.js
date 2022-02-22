@@ -3,10 +3,10 @@
 $( document ).ready(function() {
     const homePageSliderSource = $("#homePageSliderTemplate").html();        
 
-    console.log("homePageSliderSource: ", homePageSliderSource);
+    // console.log("homePageSliderSource: ", homePageSliderSource);
     const homePageSliderTemplate = Handlebars.compile(homePageSliderSource);
 
-    console.log("homePageSliderTemplate: ", homePageSliderTemplate);
+    // console.log("homePageSliderTemplate: ", homePageSliderTemplate);
 
     const sliderSrcs = [
         {
@@ -21,13 +21,13 @@ $( document ).ready(function() {
     ];
 
 
-    console.log("sliderSrcs: ", sliderSrcs);
+    // console.log("sliderSrcs: ", sliderSrcs);
     
     const homePageSlider = $("#homePageSlider");
 
     const slider = homePageSliderTemplate({sliderSrcs});
 
-    console.log("slider: ", slider);
+    // console.log("slider: ", slider);
 
     homePageSlider.html(slider);
 
@@ -38,6 +38,65 @@ $( document ).ready(function() {
     const firstSliderTab = $( "#homePageSliderTabList .home-page-slider-tab-item" ).eq(0);
     firstSliderTab.addClass('home-page-slider-tab--active');
 
+
+
+
+    
+
+
+    const homePagePlaceSliderSource = $("#homePagePlaceSliderTemplate").html();        
+
+    console.log("homePagePlaceSliderSource: ", homePagePlaceSliderSource);
+    const homePagePlaceSliderTemplate = Handlebars.compile(homePagePlaceSliderSource);
+
+    console.log("homePagePlaceSliderTemplate: ", homePagePlaceSliderTemplate);
+
+    const sliderPlaceSrcs = [
+        {
+            src: "/assets//img/place/HaNoi.png",
+        },
+        {
+            src: "/assets/img/place/HoChiMinh.png",
+        },
+        {
+            src: "/assets/img/place/VungTau.png",
+        },
+        {
+            src: "/assets/img/place/DaLat.png",
+        },
+        {
+            src: "/assets/img/place/DaNang.png",
+        },
+        {
+            src: "/assets/img/place/NhaTrang.png",
+        },
+        {
+            src: "/assets/img/place/QuangNinh.png",
+        },
+        {
+            src: "/assets/img/place/HoiAn.png",
+        },
+    ];
+
+
+    console.log("sliderPlaceSrcs: ", sliderPlaceSrcs);
+    
+    const homePagePlaceSlider = $("#homePagePlaceSlider");
+
+    const placeSlider = homePagePlaceSliderTemplate({sliderPlaceSrcs});
+
+    console.log("placeSlider: ", placeSlider);
+
+    homePagePlaceSlider.html(placeSlider);
+
+    $(".home-page-place-slider-list").slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: $('#homePagePlaceSliderPrevBtn'),
+        nextArrow: $('#homePagePlaceSliderNextBtn')
+});
+
 });
 
 
@@ -45,17 +104,15 @@ $( document ).ready(function() {
 //https://stackoverflow.com/questions/31561717/bootstrap-carousel-indicators-out-of-the-main-div-not-switching-automatically
 $('#homePageSlider').on('slide.bs.carousel', function (e) {
 
-
-
     const oldSlider=$(e.target).find('.home-page-slider-tab-item.home-page-slider-tab--active'); //get the current active slide
-    console.log(oldSlider);
+    // console.log(oldSlider);
 
     const oldSliderIndex = e.from;
     const curSliderIndex = e.to;
 
 
-    console.log("old index: ", oldSliderIndex);
-    console.log("cur index: ", curSliderIndex);
+    // console.log("old index: ", oldSliderIndex);
+    // console.log("cur index: ", curSliderIndex);
 
     oldSlider.removeClass('home-page-slider-tab--active');
 

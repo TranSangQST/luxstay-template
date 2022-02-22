@@ -9,9 +9,15 @@
         <link rel="stylesheet" href="venders/font/fontawesome-free-5.15.4-web/css/all.min.css" />
         <link rel="stylesheet" href="venders/font/fontawesome-free-6.0.0-web/css/all.min.css" />
 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="stylesheet" href="/assets/css/base.css" />
         <link rel="stylesheet" href="/assets/css/header.css" />
         <link rel="stylesheet" href="/assets/css/homePageContent.css" />
+
+        
 
         <title>Document</title>
     </head>
@@ -107,11 +113,11 @@
                 </div>
                 <div class="home-page-content">
                     <div class="home-page-introduction">
-                        <header class="home-page-header">
-                            <h2 class="home-page-header__heading">
+                        <header class="home-page-content-header">
+                            <h2 class="home-page-content-header__heading">
                                 Chào mừng đến với Luxstay!
                             </h2>
-                            <div class="home-page-header__description">
+                            <div class="home-page-content-header__description">
                                 <p class="mb-2">
                                     Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa trên Luxstay
                                 </p>
@@ -128,33 +134,56 @@
 
                 <div class="home-page-content">
                     <div class="home-page-place">
-                        <header class="home-page-header">
-                            <h2 class="home-page-header__heading">
+                        <header class="home-page-content-header">
+                            <h2 class="home-page-content-header__heading">
                                 Địa điểm nổi bật
                             </h2>
-                            <div class="home-page-header__description">
+                            <div class="home-page-content-header__description">
                                 Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn
                             </div>
                         </header>
+
+                        <div class="home-page-place-slider" id="homePagePlaceSlider">
+                            <script type="text/x-handlebars-template" id="homePagePlaceSliderTemplate">
+                                <ul class="slider row py-4 home-page-place-slider-list">
+                                    {{#each sliderPlaceSrcs}}        
+                                        <li class="home-page-place-slider-item">
+                                            <img src="{{src}}" class="home-page-place-slider-item-img">
+                                        </li>
+                                    {{/each}}    
+                                </ul>
+                                <button id="homePagePlaceSliderPrevBtn" class="btn btn-light home-page-place-slider-btn home-page-place-slider-prev-btn">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button id="homePagePlaceSliderNextBtn" class="btn btn-light home-page-place-slider-btn home-page-place-slider-next-btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </script>
+                        </div>
                     </div>
                 </div>
             </div>
-            <footer class="main-footer"></footer>
+
+            <footer class="main-footer">
+
+            </footer>
         </div>
 
-        <script src="/venders/jquery/jquery-3.6.0.min.js" type="text/JavaScript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" type="text/JavaScript"></script>
-        <script src="/venders/bootstrap-4.3.1-dist/js/bootstrap.min.js" type="text/JavaScript"></script>
+        <script type="text/javascript" src="/venders/jquery/jquery-3.6.0.min.js" type="text/JavaScript"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" type="text/JavaScript"></script>
+        <script type="text/javascript" src="/venders/bootstrap-4.3.1-dist/js/bootstrap.min.js" type="text/JavaScript"></script>
 
-        <script
+        <script type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
             integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
 
-        <script src="/assets/js/header.js" type="text/JavaScript"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="/assets/js/homePageContent.js" type="text/JavaScript"></script>
+        <script type="text/javascript" src="/assets/js/header.js" type="text/JavaScript"></script>
+        <script type="text/javascript" src="/assets/js/homePageContent.js" type="text/JavaScript"></script>
+
     </body>
 </html>
