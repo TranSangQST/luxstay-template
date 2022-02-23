@@ -134,7 +134,7 @@ $( document ).ready(function() {
 
 
 
-    const homePageAccommodationSuggestionSliderSource = $("#homePageAccommodationSuggestionSliderTemplate").html();        
+const homePageAccommodationSuggestionSliderSource = $("#homePageAccommodationSuggestionSliderTemplate").html();        
 
 console.log("homePageAccommodationSuggestionSliderSource: ", homePageAccommodationSuggestionSliderSource);
 const homePageAccommodationSuggestionSliderTemplate = Handlebars.compile(homePageAccommodationSuggestionSliderSource);
@@ -150,13 +150,13 @@ class AccommodationSuggestion {
 }
 
 const accommodationSuggestionArr = [
-    new AccommodationSuggestion("Hà Nội","/assets//img/accommodation/accommodation01.jpg",""),
-    new AccommodationSuggestion("TP. Hồ Chí Minh","/assets/img/accommodation/accommodation02.jpg",""),
-    new AccommodationSuggestion("Vũng Tàu","/assets/img/accommodation/accommodation03.jpg",""),
-    new AccommodationSuggestion("Đà Lạt","/assets/img/accommodation/accommodation04.jpg",""),
-    new AccommodationSuggestion("Đà Nẵng","/assets/img/accommodation/accommodation05.jpg",""),
-    new AccommodationSuggestion("Nha Trang","/assets/img/accommodation/accommodation06.jpg",""),
-    new AccommodationSuggestion("Quảng Ninh","/assets/img/accommodation/accommodation07.jpg",""),
+    new AccommodationSuggestion("Vi vu ngoại thành Hà Nội","/assets//img/accommodation/accommodation01.jpg","Trải nghiệm không gian thoáng đãng cho chuyến đi ngay gần Hà Nội"),
+    new AccommodationSuggestion("Vũng Tàu Biệt thự hồ bơi","/assets/img/accommodation/accommodation02.jpg","Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn tại Vũng Tàu"),
+    new AccommodationSuggestion("Hà Nội nội thành lãng mạn","/assets/img/accommodation/accommodation03.jpg","Không gian lãng mạn dành cho cặp đôi tại trung tâm Hà Nội"),
+    new AccommodationSuggestion("Sài Gòn cần là có ngay","/assets/img/accommodation/accommodation04.jpg","Những căn homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh chóng"),
+    new AccommodationSuggestion("Bể bơi &amp; BBQ","/assets/img/accommodation/accommodation05.jpg","Trải nghiệm đẳng cấp tại những căn homestay có bể bơi đẹp và khu vực BBQ ấm cúng."),
+    new AccommodationSuggestion("Siêu giảm giá!","/assets/img/accommodation/accommodation06.jpg","Top chỗ ở giảm giá đến 50% từ các chủ nhà thân thiện trên Luxstay."),
+    new AccommodationSuggestion("Gần Trung tâm!","/assets/img/accommodation/accommodation07.jpg","Dễ dàng di chuyển khắp nơi với top chỗ ở khu vực trung tâm thành phố Hồ Chí Minh"),
 ]
 
 
@@ -176,6 +176,107 @@ $(".home-page-accommodation-suggestion-slider-list").slick({
         slidesToScroll: 1,
         prevArrow: $('#homePageAccommodationSuggestionSliderPrevBtn'),
         nextArrow: $('#homePageAccommodationSuggestionSliderNextBtn')
+});
+
+
+
+
+const homePageDiscoverySuggestionSliderSource = $("#homePageDiscoverySuggestionSliderTemplate").html();        
+
+console.log("homePageDiscoverySuggestionSliderSource: ", homePageDiscoverySuggestionSliderSource);
+const homePageDiscoverySuggestionSliderTemplate = Handlebars.compile(homePageDiscoverySuggestionSliderSource);
+
+console.log("homePageDiscoverySuggestionSliderTemplate: ", homePageDiscoverySuggestionSliderTemplate);
+
+class DiscoverySuggestion {
+    constructor(title, description) {
+        this.title = title;
+        this.description = description;
+    }
+}
+
+const discoverySuggestionArr = [
+    new DiscoverySuggestion("​Thông tin homestay​​","5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Du lịch Cần Thơ nhất định phải ghé thăm những địa điểm này"),
+    new DiscoverySuggestion("TP. Hồ Chí Minh​​","Tuần lễ “Tôi yêu bánh mì Sài Gòn” chính thức diễn ra từ ngày 24/3"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Trải nghiệm thú vị ở sở thú Zoodoo Đà Lạt"),
+    new DiscoverySuggestion("Hội An​​","Hội An sẽ lập chốt quản lý du khách đeo khẩu trang khi vào thành phố"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Mức phí cách ly tại khách sạn, resort ở Việt Nam cho du khách có nhu cầu"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Thủ đô Hà Nội nằm trong danh sách những thành phố đẹp nhất thế giới"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Cách đặt phòng tại Đà Lạt cho chuyến du lịch tiết kiệm nhất"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Cách lập kế hoạch tài chính cho chuyến du lịch hoàn hảo"),
+    new DiscoverySuggestion("​Vũng Tàu​​","List homestay Vũng Tàu cho nhóm đông người, vui cười hưởng giá tốt!"),
+    new DiscoverySuggestion(">​Vũng Tàu​​","Xuất hiện thế giới đảo lộn ở Vũng Tàu, bạn sẵn sàng thử chưa?"),
+    new DiscoverySuggestion("​TP. Hồ Chí Minh​​","Những điều nên tuân thủ trước khi trả phòng homestay để lợi cả đôi đường"),
+    new DiscoverySuggestion("​Thông tin hữu ích dành cho chủ nhà​​","Lakeside villa garden: điểm dừng chân mới toanh của giới trẻ Hà thành"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Những điều kiêng kị khi ở homestay dưới góc nhìn độc & lạ của Tạ Quốc Kỳ Nam"),
+    new DiscoverySuggestion("​Thông tin homestay​​","Tại sao gọi Đà Lạt là thành phố tình yêu?")
+]
+
+
+console.log("discoverySuggestionArr: ", discoverySuggestionArr);
+
+const homePageDiscoverySuggestionSlider = $("#homePageDiscoverySuggestionSlider");
+
+const discoverySuggestionSlider = homePageDiscoverySuggestionSliderTemplate({discoverySuggestionArr});
+
+console.log("discoverySuggestionSlider: ", discoverySuggestionSlider);
+
+homePageDiscoverySuggestionSlider.html(discoverySuggestionSlider);
+
+$(".home-page-discovery-suggestion-slider-list").slick({
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('#homePageDiscoverySuggestionSliderPrevBtn'),
+        nextArrow: $('#homePageDiscoverySuggestionSliderNextBtn')
+});
+
+
+
+
+
+
+
+
+const homePageTutorialSliderSource = $("#homePageTutorialSliderTemplate").html();        
+
+console.log("homePageTutorialSliderSource: ", homePageTutorialSliderSource);
+const homePageTutorialSliderTemplate = Handlebars.compile(homePageTutorialSliderSource);
+
+console.log("homePageTutorialSliderTemplate: ", homePageTutorialSliderTemplate);
+
+class Tutorial {
+    constructor(img) {
+        this.img = img;
+    }
+}
+
+const tutorialArr = [
+    new Tutorial("/assets/img/tutorial/tutorial01.jpg"),
+    new Tutorial("/assets/img/tutorial/tutorial02.jpg"),
+    new Tutorial("/assets/img/tutorial/tutorial03.jpg"),
+    new Tutorial("/assets/img/tutorial/tutorial04.jpg"),
+    new Tutorial("/assets/img/tutorial/tutorial05.jpg"),
+]
+
+
+console.log("tutorialArr: ", tutorialArr);
+
+const homePageTutorialSlider = $("#homePageTutorialSlider");
+
+const tutorialSlider = homePageTutorialSliderTemplate({tutorialArr});
+
+console.log("tutorialSlider: ", tutorialSlider);
+
+homePageTutorialSlider.html(tutorialSlider);
+
+$(".home-page-tutorial-slider-list").slick({
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: $('#homePageTutorialSliderPrevBtn'),
+        nextArrow: $('#homePageTutorialSliderNextBtn')
 });
 
 });

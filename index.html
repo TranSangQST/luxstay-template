@@ -145,9 +145,9 @@
 
                         <div class="home-page-place-slider" id="homePagePlaceSlider">
                             <script type="text/x-handlebars-template" id="homePagePlaceSliderTemplate">
-                                <ul class="slider row py-4 home-page-place-slider-list">
+                                <div class="slider py-4 home-page-place-slider-list">
                                     {{#each placeArr}}        
-                                        <li class="home-page-place-slider-item">
+                                        <div class="home-page-place-slider-item">
                                             <img src="{{img}}" class="home-page-place-slider-item-img">
 
                                             <div class="home-page-place-slider-item-infor">
@@ -156,9 +156,9 @@
                                                 <span class="home-page-place-slider-item__accommodation-unit">chỗ ở</span>
                                             </div>
 
-                                        </li>
+                                        </div>
                                     {{/each}}    
-                                </ul>
+                                </div>
                                 <button id="homePagePlaceSliderPrevBtn" class="btn btn-light home-page-place-slider-btn home-page-place-slider-prev-btn">
                                     <i class="fa-solid fa-angle-left"></i>
                                 </button>
@@ -226,8 +226,7 @@
                     
                                             <div class="home-page-accommodation-suggestion-slider-item-infor">
                                                 <h5 class="home-page-accommodation-suggestion-slider-item__name">{{name}}</h5>
-                                                <span class="home-page-accommodation-suggestion-slider-item__accommodation">{{accommodation}}</span>
-                                                <span class="home-page-accommodation-suggestion-slider-item__accommodation-unit">chỗ ở</span>
+                                                <span class="home-page-accommodation-suggestion-slider-item__description">{{description}}</span>
                                             </div>
                     
                                         </li>
@@ -242,8 +241,76 @@
                             </script>
                         </div>
                     </div>
+                </div>
+
+                
+                <div class="home-page-content">
+                    <div class="home-page-discovery-suggestion">
+                        <header class="home-page-content-header">
+                            <h2 class="home-page-content-header__heading">
+                                Gợi ý khám phá
+                            </h2>
+                            <div class="home-page-content-header__description">
+                                Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên
+                            </div>
+                        </header>
+                    
+                        <div class="home-page-discovery-suggestion-slider" id="homePageDiscoverySuggestionSlider">
+                            <script type="text/x-handlebars-template" id="homePageDiscoverySuggestionSliderTemplate">
+                                <ul class="slider row py-4 home-page-discovery-suggestion-slider-list">
+                                    {{#each discoverySuggestionArr}}        
+                                        <li class="home-page-discovery-suggestion-slider-item">
+                                            <div class="home-page-discovery-suggestion-slider-item-infor">
+                                                <h5 class="home-page-discovery-suggestion-slider-item__title">{{title}}</h5>
+                                                <span class="home-page-discovery-suggestion-slider-item__description">{{description}}</span>
+                                            </div>
+                                        </li>
+                                    {{/each}}    
+                                </ul>
+                                <button id="homePageDiscoverySuggestionSliderPrevBtn" class="btn btn-light home-page-discovery-suggestion-slider-btn home-page-discovery-suggestion-slider-prev-btn">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button id="homePageDiscoverySuggestionSliderNextBtn" class="btn btn-light home-page-discovery-suggestion-slider-btn home-page-discovery-suggestion-slider-next-btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-page-content">
+                    <div class="home-page-tutorial">
+                        <header class="home-page-content-header">
+                            <h2 class="home-page-content-header__heading">
+                                Hướng dẫn sử dụng
+                            </h2>
+                            <div class="home-page-content-header__description">
+                                Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng
+                            </div>
+                        </header>
+                    
+                        <div class="home-page-tutorial-slider" id="homePageTutorialSlider">
+                            <script type="text/x-handlebars-template" id="homePageTutorialSliderTemplate">
+                                <ul class="slider row py-4 home-page-tutorial-slider-list">
+                                    {{#each tutorialArr}}        
+                                        <li class="home-page-tutorial-slider-item">
+                                            <img src="{{img}}" class="home-page-tutorial-slider-item-img">
+                                        </li>
+                                    {{/each}}    
+                                </ul>
+                                <button id="homePageTutorialSliderPrevBtn" class="btn btn-light home-page-tutorial-slider-btn home-page-tutorial-slider-prev-btn">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button id="homePageTutorialSliderNextBtn" class="btn btn-light home-page-tutorial-slider-btn home-page-tutorial-slider-next-btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </script>
+                        </div>
+                    </div>
                     </div>
             </div>
+
+            
 
 
             <footer class="main-footer">
