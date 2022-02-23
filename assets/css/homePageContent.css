@@ -461,3 +461,27 @@
     right: 0;
     transform: translate(30%, -50%);
 }
+
+
+
+.contact-call{
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 16px;
+    background-color: #0066a6;
+    cursor: pointer;
+}
+
+.contact-call:hover{
+    background-color: var(--text-link-hover-color);
+}
+
+.contact-call-icon{
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
