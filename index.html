@@ -169,7 +169,82 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="home-page-content">
+                    <div class="home-page-promotion">
+                        <header class="home-page-content-header">
+                            <h2 class="home-page-content-header__heading">
+                                Ưu đãi độc quyền
+                            </h2>
+                            <div class="home-page-content-header__description home-page-content-header__many-description">
+                                <span class="home-page-content-header__description-text">
+                                    Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!
+                                </span>
+                                <a href="#" class="home-page-content-header__description-more-link">
+                                    Xem thêm
+                                </a>
+                            </div>
+                        </header>
+
+                        <div class="home-page-promotion-slider" id="homePagePromotionSlider">
+                            <script type="text/x-handlebars-template" id="homePagePromotionSliderTemplate">
+                                <ul class="slider row py-4 home-page-promotion-slider-list">
+                                    {{#each promotionArr}}        
+                                        <li class="home-page-promotion-slider-item">
+                                            <img src="{{img}}" class="home-page-promotion-slider-item-img">
+                                        </li>
+                                    {{/each}}    
+                                </ul>
+                                <button id="homePagePromotionSliderPrevBtn" class="btn btn-light home-page-promotion-slider-btn home-page-promotion-slider-prev-btn">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button id="homePagePromotionSliderNextBtn" class="btn btn-light home-page-promotion-slider-btn home-page-promotion-slider-next-btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-page-content">
+                    <div class="home-page-accommodation-suggestion">
+                        <header class="home-page-content-header">
+                            <h2 class="home-page-content-header__heading">
+                                Gợi ý từ Luxstay
+                            </h2>
+                            <div class="home-page-content-header__description">
+                                Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
+                            </div>
+                        </header>
+                    
+                        <div class="home-page-accommodation-suggestion-slider" id="homePageAccommodationSuggestionSlider">
+                            <script type="text/x-handlebars-template" id="homePageAccommodationSuggestionSliderTemplate">
+                                <ul class="slider row py-4 home-page-accommodation-suggestion-slider-list">
+                                    {{#each accommodationSuggestionArr}}        
+                                        <li class="home-page-accommodation-suggestion-slider-item">
+                                            <img src="{{img}}" class="home-page-accommodation-suggestion-slider-item-img">
+                    
+                                            <div class="home-page-accommodation-suggestion-slider-item-infor">
+                                                <h5 class="home-page-accommodation-suggestion-slider-item__name">{{name}}</h5>
+                                                <span class="home-page-accommodation-suggestion-slider-item__accommodation">{{accommodation}}</span>
+                                                <span class="home-page-accommodation-suggestion-slider-item__accommodation-unit">chỗ ở</span>
+                                            </div>
+                    
+                                        </li>
+                                    {{/each}}    
+                                </ul>
+                                <button id="homePageAccommodationSuggestionSliderPrevBtn" class="btn btn-light home-page-accommodation-suggestion-slider-btn home-page-accommodation-suggestion-slider-prev-btn">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                                <button id="homePageAccommodationSuggestionSliderNextBtn" class="btn btn-light home-page-accommodation-suggestion-slider-btn home-page-accommodation-suggestion-slider-next-btn">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </button>
+                            </script>
+                        </div>
+                    </div>
+                    </div>
             </div>
+
 
             <footer class="main-footer">
 

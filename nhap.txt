@@ -1,0 +1,89 @@
+<div class="slick-track" style="opacity: 1; width: 2296px; transform: translate3d(0px, 0px, 0px);">
+<div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 328px;">
+<div>
+<a href="/vi/homestay/explore/vi-vu-ngoai-thanh-ha-noi-619" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="0">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg" lazy="loaded" style="background-image: url(&quot;https://cdn.luxstay.com/home/apartment/apartment_1_1625465608.jpg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Vi vu ngoại thành Hà Nội</div> <span class="article__excerpt">
+<p><span style="color: rgb(21, 27, 38);">Trải nghiệm không gian thoáng đãng cho chuyến đi ngay gần Hà Nội</span>
+</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 328px;">
+<div>
+<a href="/vi/homestay/explore/vung-tau-biet-thu-ho-boi-618" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="0">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_2_1614588617.jpg" lazy="loaded" style="background-image: url(&quot;https://cdn.luxstay.com/home/apartment/apartment_2_1614588617.jpg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Vũng Tàu Biệt thự hồ bơi</div> <span class="article__excerpt">
+<p>Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn tại Vũng Tàu</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 328px;">
+<div>
+<a href="/vi/homestay/explore/ha-noi-noi-thanh-lang-man-620" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="0">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_1_1614660728.jpg" lazy="loaded" style="background-image: url(&quot;https://cdn.luxstay.com/home/apartment/apartment_1_1614660728.jpg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Hà Nội nội thành lãng mạn</div> <span class="article__excerpt">
+<p><span style="color: rgb(21, 27, 38);">Không gian lãng mạn dành cho cặp đôi tại trung tâm Hà Nội</span>
+</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 328px;">
+<div>
+<a href="/vi/homestay/explore/sai-gon-can-la-co-ngay-621" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="0">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_2_1615794965.jpg" lazy="loaded" style="background-image: url(&quot;https://cdn.luxstay.com/home/apartment/apartment_2_1615794965.jpg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Sài Gòn cần là có ngay</div> <span class="article__excerpt">
+<p>Những căn homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh chóng</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 328px;" tabindex="-1">
+<div>
+<a href="/vi/homestay/explore/be-boi-bbq-468" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="-1">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_1_1584606781.jpg" lazy="loaded" style="background-image: url(&quot;https://cdn.luxstay.com/home/apartment/apartment_1_1584606781.jpg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Bể bơi &amp; BBQ</div> <span class="article__excerpt">
+<p>Trải nghiệm đẳng cấp tại những căn homestay có bể bơi đẹp và khu vực BBQ ấm cúng.</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 328px;" tabindex="-1">
+<div>
+<a href="/vi/homestay/explore/sieu-giam-gia-471" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="-1">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_2_1584606872.jpg" lazy="loaded" style="background-image: url(&quot;https://cdn.luxstay.com/home/apartment/apartment_2_1584606872.jpg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Siêu giảm giá!</div> <span class="article__excerpt">
+<p>Top chỗ ở giảm giá đến 50% từ các chủ nhà thân thiện trên Luxstay.</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+<div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 328px;" tabindex="-1">
+<div>
+<a href="/vi/homestay/explore/gan-trung-tam-314" class="article is-relative" style="width: 100%; display: inline-block;" tabindex="-1">
+<span class="is-block bg-img bg-img--85 radius-xs" data-src="https://cdn.luxstay.com/home/apartment/apartment_10_1584602562.jpg" lazy="loading" style="background-image: url(&quot;/loading-img.svg&quot;);">
+</span> <div class="article__content">
+<div class="article__title bold">Gần Trung tâm!</div> <span class="article__excerpt">
+<p><span style="color: rgb(21, 27, 38);">Dễ dàng di chuyển khắp nơi với top chỗ ở khu vực trung tâm thành phố Hồ Chí Minh</span>
+</p>
+</span>
+</div>
+</a>
+</div>
+</div>
+</div>

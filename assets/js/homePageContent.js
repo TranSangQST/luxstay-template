@@ -82,11 +82,100 @@ $( document ).ready(function() {
     homePagePlaceSlider.html(placeSlider);
 
     $(".home-page-place-slider-list").slick({
+            infinite: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            prevArrow: $('#homePagePlaceSliderPrevBtn'),
+            nextArrow: $('#homePagePlaceSliderNextBtn')
+    });
+
+
+
+    const homePagePromotionSliderSource = $("#homePagePromotionSliderTemplate").html();        
+
+    console.log("homePagePromotionSliderSource: ", homePagePromotionSliderSource);
+    const homePagePromotionSliderTemplate = Handlebars.compile(homePagePromotionSliderSource);
+
+    console.log("homePagePromotionSliderTemplate: ", homePagePromotionSliderTemplate);
+
+    class Promotion {
+        constructor(img) {
+            this.img = img;
+        }
+    }
+    
+    const promotionArr = [
+        new Promotion("/assets/img/promotion/promotion01.jpg"),
+        new Promotion("/assets/img/promotion/promotion02.jpg"),
+        new Promotion("/assets/img/promotion/promotion03.jpg"),
+    ]
+
+
+    console.log("promotionArr: ", promotionArr);
+    
+    const homePagePromotionSlider = $("#homePagePromotionSlider");
+
+    const promotionSlider = homePagePromotionSliderTemplate({promotionArr});
+
+    console.log("promotionSlider: ", promotionSlider);
+
+    homePagePromotionSlider.html(promotionSlider);
+
+    $(".home-page-promotion-slider-list").slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay:true,
+            autoplaySpeed: 2000,
+            prevArrow: $('#homePagePromotionSliderPrevBtn'),
+            nextArrow: $('#homePagePromotionSliderNextBtn')
+    });
+
+
+
+
+    const homePageAccommodationSuggestionSliderSource = $("#homePageAccommodationSuggestionSliderTemplate").html();        
+
+console.log("homePageAccommodationSuggestionSliderSource: ", homePageAccommodationSuggestionSliderSource);
+const homePageAccommodationSuggestionSliderTemplate = Handlebars.compile(homePageAccommodationSuggestionSliderSource);
+
+console.log("homePageAccommodationSuggestionSliderTemplate: ", homePageAccommodationSuggestionSliderTemplate);
+
+class AccommodationSuggestion {
+    constructor(name, img, description) {
+        this.name = name;
+        this.img = img;
+        this.description = description;
+    }
+}
+
+const accommodationSuggestionArr = [
+    new AccommodationSuggestion("Hà Nội","/assets//img/accommodation/accommodation01.jpg",""),
+    new AccommodationSuggestion("TP. Hồ Chí Minh","/assets/img/accommodation/accommodation02.jpg",""),
+    new AccommodationSuggestion("Vũng Tàu","/assets/img/accommodation/accommodation03.jpg",""),
+    new AccommodationSuggestion("Đà Lạt","/assets/img/accommodation/accommodation04.jpg",""),
+    new AccommodationSuggestion("Đà Nẵng","/assets/img/accommodation/accommodation05.jpg",""),
+    new AccommodationSuggestion("Nha Trang","/assets/img/accommodation/accommodation06.jpg",""),
+    new AccommodationSuggestion("Quảng Ninh","/assets/img/accommodation/accommodation07.jpg",""),
+]
+
+
+console.log("accommodationSuggestionArr: ", accommodationSuggestionArr);
+
+const homePageAccommodationSuggestionSlider = $("#homePageAccommodationSuggestionSlider");
+
+const accommodationSuggestionSlider = homePageAccommodationSuggestionSliderTemplate({accommodationSuggestionArr});
+
+console.log("accommodationSuggestionSlider: ", accommodationSuggestionSlider);
+
+homePageAccommodationSuggestionSlider.html(accommodationSuggestionSlider);
+
+$(".home-page-accommodation-suggestion-slider-list").slick({
         infinite: false,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: $('#homePagePlaceSliderPrevBtn'),
-        nextArrow: $('#homePagePlaceSliderNextBtn')
+        prevArrow: $('#homePageAccommodationSuggestionSliderPrevBtn'),
+        nextArrow: $('#homePageAccommodationSuggestionSliderNextBtn')
 });
 
 });
