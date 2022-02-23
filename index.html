@@ -146,9 +146,16 @@
                         <div class="home-page-place-slider" id="homePagePlaceSlider">
                             <script type="text/x-handlebars-template" id="homePagePlaceSliderTemplate">
                                 <ul class="slider row py-4 home-page-place-slider-list">
-                                    {{#each sliderPlaceSrcs}}        
+                                    {{#each placeArr}}        
                                         <li class="home-page-place-slider-item">
-                                            <img src="{{src}}" class="home-page-place-slider-item-img">
+                                            <img src="{{img}}" class="home-page-place-slider-item-img">
+
+                                            <div class="home-page-place-slider-item-infor">
+                                                <h5 class="home-page-place-slider-item__name">{{name}}</h5>
+                                                <span class="home-page-place-slider-item__accommodation">{{accommodation}}</span>
+                                                <span class="home-page-place-slider-item__accommodation-unit">chỗ ở</span>
+                                            </div>
+
                                         </li>
                                     {{/each}}    
                                 </ul>

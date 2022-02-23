@@ -76,12 +76,11 @@
 }
 
 .home-page-place-slider-item{
+    position: relative;
     display: block;
     margin: 0 12px;
     padding-left: 0;
-    /* width: 336px;
-    height: 420px; */
-
+    height: 310px;
 }
 
 .home-page-place-slider-item-img{
@@ -90,6 +89,23 @@
     object-fit: cover;
 }
 
+.home-page-place-slider-item-infor{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+}
+
+.home-page-place-slider-item__name{
+    font-weight: 700;
+    color: var(--white-color);
+
+}
+
+.home-page-place-slider-item__accommodation,
+.home-page-place-slider-item__accommodation-unit{
+    font-weight: 600;
+    color: var(--white-color);
+}
 
 .home-page-place-slider-btn{
     width: 50px;

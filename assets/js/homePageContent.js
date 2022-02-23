@@ -51,46 +51,38 @@ $( document ).ready(function() {
 
     console.log("homePagePlaceSliderTemplate: ", homePagePlaceSliderTemplate);
 
-    const sliderPlaceSrcs = [
-        {
-            src: "/assets//img/place/HaNoi.png",
-        },
-        {
-            src: "/assets/img/place/HoChiMinh.png",
-        },
-        {
-            src: "/assets/img/place/VungTau.png",
-        },
-        {
-            src: "/assets/img/place/DaLat.png",
-        },
-        {
-            src: "/assets/img/place/DaNang.png",
-        },
-        {
-            src: "/assets/img/place/NhaTrang.png",
-        },
-        {
-            src: "/assets/img/place/QuangNinh.png",
-        },
-        {
-            src: "/assets/img/place/HoiAn.png",
-        },
-    ];
+    class Place {
+        constructor(name, img, accommodation) {
+            this.name = name;
+            this.img = img;
+            this.accommodation = accommodation;
+        }
+    }
+    
+    const placeArr = [
+        new Place("Hà Nội","/assets//img/place/HaNoi.png",2375),
+        new Place("TP. Hồ Chí Minh","/assets/img/place/HoChiMinh.png",2034),
+        new Place("Vũng Tàu","/assets/img/place/VungTau.png",357),
+        new Place("Đà Lạt","/assets/img/place/DaLat.png",934),
+        new Place("Đà Nẵng","/assets/img/place/DaNang.png",839),
+        new Place("Nha Trang","/assets/img/place/NhaTrang.png",590),
+        new Place("Quảng Ninh","/assets/img/place/QuangNinh.png",202),
+        new Place("Hội An","/assets/img/place/HoiAn.png",317),
+    ]
 
 
-    console.log("sliderPlaceSrcs: ", sliderPlaceSrcs);
+    console.log("placeArr: ", placeArr);
     
     const homePagePlaceSlider = $("#homePagePlaceSlider");
 
-    const placeSlider = homePagePlaceSliderTemplate({sliderPlaceSrcs});
+    const placeSlider = homePagePlaceSliderTemplate({placeArr});
 
     console.log("placeSlider: ", placeSlider);
 
     homePagePlaceSlider.html(placeSlider);
 
     $(".home-page-place-slider-list").slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 5,
         slidesToScroll: 1,
         prevArrow: $('#homePagePlaceSliderPrevBtn'),
@@ -199,24 +191,6 @@ $('#homePageSlider').on('slide.bs.carousel', function (e) {
 // /*---------------------------------------------Location------------------------------------------------------*/
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// class Place {
-//     constructor(name, img, accommodation) {
-//         this.name = name;
-//         this.img = img;
-//         this.accommodation = accommodation;
-//     }
-// }
-
-// const placeArr = [
-//     new Place("Hà Nội","/assets/img/place/HaNoi.png",2375),
-//     new Place("TP. Hồ Chí Minh","/assets/img/place/HaNoi.png",2034),
-//     new Place("Vũng Tàu","/assets/img/place/HaNoi.png",357),
-//     new Place("Đà Lạt","/assets/img/place/HaNoi.png",934),
-//     new Place("Đà Nẵng","/assets/img/place/HaNoi.png",839),
-//     new Place("Nha Trang","/assets/img/place/HaNoi.png",590),
-//     new Place("Quảng Ninh","/assets/img/place/HaNoi.png",202),
-//     new Place("Hội An","/assets/img/place/HaNoi.png",317),
-// ]
 
 
 
