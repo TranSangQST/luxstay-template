@@ -485,3 +485,72 @@
     color: var(--white-color);
     font-size: 1.4rem;
 }
+
+
+
+
+
+
+
+
+
+.home-page-download{
+
+}
+
+.home-page-download-infor{
+    
+}
+
+.home-page-download-intro{
+
+}
+
+.home-page-download-intro-logo{
+    margin-bottom: 20px;
+}
+
+.home-page-download-intro-logo-svg{
+    width: 50%;
+}
+
+.home-page-download-intro-heading{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home-page-download-intro-description{
+    padding-bottom: 24px;
+}
+
+.home-page-download-app{
+    padding-top: 32px;
+}
+
+.home-page-download-app-qr{
+    
+}
+
+.home-page-download-app-qr-img{
+    width: 100%;
+}
+
+.home-page-download-app-list{
+    padding-left: 40px;
+}
+
+.home-page-download-app-item{
+    margin-bottom: 20px;
+}
+
+.home-page-download-app-item-img{
+    width: 100%;
+}
+
+.home-page-download-img{
+    width: 100%;
+}
+
+
+
+
