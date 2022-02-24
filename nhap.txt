@@ -1,45 +1,17 @@
-
-    const homePageTutorialSliderSource = $("#homePageTutorialSliderTemplate").html();        
-
-    console.log("homePageTutorialSliderSource: ", homePageTutorialSliderSource);
-    const homePageTutorialSliderTemplate = Handlebars.compile(homePageTutorialSliderSource);
-
-    console.log("homePageTutorialSliderTemplate: ", homePageTutorialSliderTemplate);
-
-    class Tutorial {
-        constructor(name, img, accommodation) {
-            this.name = name;
-            this.img = img;
-            this.accommodation = accommodation;
-        }
-    }
-    
-    const tutorialArr = [
-        new Tutorial("Hà Nội","/assets//img/tutorial/HaNoi.png",2375),
-        new Tutorial("TP. Hồ Chí Minh","/assets/img/tutorial/HoChiMinh.png",2034),
-        new Tutorial("Vũng Tàu","/assets/img/tutorial/VungTau.png",357),
-        new Tutorial("Đà Lạt","/assets/img/tutorial/DaLat.png",934),
-        new Tutorial("Đà Nẵng","/assets/img/tutorial/DaNang.png",839),
-        new Tutorial("Nha Trang","/assets/img/tutorial/NhaTrang.png",590),
-        new Tutorial("Quảng Ninh","/assets/img/tutorial/QuangNinh.png",202),
-        new Tutorial("Hội An","/assets/img/tutorial/HoiAn.png",317),
-    ]
-
-
-    console.log("tutorialArr: ", tutorialArr);
-    
-    const homePageTutorialSlider = $("#homePageTutorialSlider");
-
-    const tutorialSlider = homePageTutorialSliderTemplate({tutorialArr});
-
-    console.log("tutorialSlider: ", tutorialSlider);
-
-    homePageTutorialSlider.html(tutorialSlider);
-
-    $(".home-page-tutorial-slider-list").slick({
-            infinite: false,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            prevArrow: $('#homePageTutorialSliderPrevBtn'),
-            nextArrow: $('#homePageTutorialSliderNextBtn')
-    });
+<ul class="widget__menu widget__text">
+<li class="widget__menu-item">
+<a href="https://www.luxstay.com/vi/s/?property_type=31&amp;property_type=1">Căn hộ dịch vụ</a>
+</li>
+<li class="widget__menu-item">
+<a href="https://www.luxstay.com/vi/s/?property_type=9">Biệt thự</a>
+</li>
+<li class="widget__menu-item">
+<a href="https://www.luxstay.com/vi/s/?property_type=29">Nhà riêng</a>
+</li>
+<li class="widget__menu-item">
+<a href="https://www.luxstay.com/vi/s/?property_type=28">Studio</a>
+</li>
+<li class="widget__menu-item">
+<a href="https://travel.luxstay.com/">Travel Guide</a>
+</li>
+</ul>
